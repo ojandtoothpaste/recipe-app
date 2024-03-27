@@ -5,6 +5,8 @@ import Home from "./pages/Home";
 import Favorites from "./pages/Favorites";
 import Details from "./pages/Details";
 
+//ANCHOR - implemented routing below
+
 function App() {
   return (
     <div>

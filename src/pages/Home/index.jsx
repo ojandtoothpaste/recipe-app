@@ -6,7 +6,7 @@ export default function Home() {
   const { recipeList, loading } = useContext(GlobalContext);
 
   if (loading) return <div>Loading... Please Wait</div>;
-
+//ANCHOR - returns recipes but if none, returns "Nothing to show"
   return (
     <div className="py-8 container mx-auto flex flex-wrap justify-center gap-10">
       {recipeList && recipeList.length > 0 ? (

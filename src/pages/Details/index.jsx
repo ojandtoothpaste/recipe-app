@@ -10,7 +10,7 @@ export default function Details() {
     favoritesList,
     handleAddToFavorite,
   } = useContext(GlobalContext);
-
+  
   useEffect(() => {
     async function getRecipeDetails() {
       const response = await fetch(
@@ -45,6 +45,7 @@ export default function Details() {
           {recipeDetailsData?.recipe?.title}
         </h3>
         <div>
+          {/*ANCHOR - this is where we can add or remove favorites */} 
           <button
             onClick={() => handleAddToFavorite(recipeDetailsData?.recipe)}
             className="p-3 px-8 rounded-lg text-sm uppercase font-medium tracking-wider mt-3 inline-block shadow-md bg-black text-white"
